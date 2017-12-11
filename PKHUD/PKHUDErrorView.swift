@@ -63,7 +63,7 @@ open class PKHUDErrorView: PKHUDSquareBaseView, PKHUDAnimating {
 
         animation.fromValue = 0.0
         animation.toValue = angle * CGFloat(.pi / 180.0)
-        animation.duration = 0.5
+        animation.duration = 0.001
         animation.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
         return animation
     }
