@@ -65,15 +65,15 @@ open class PKHUDSquareBaseView: UIView {
 
     open override func layoutSubviews() {
         super.layoutSubviews()
-
+        
         let viewWidth = bounds.size.width
         let viewHeight = bounds.size.height
-
+        
         let halfHeight = CGFloat(ceilf(CFloat(viewHeight / 2.0)))
         let quarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0)))
         let threeQuarterHeight = CGFloat(ceilf(CFloat(viewHeight / 4.0 * 3.0)))
-
-        titleLabel.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: viewWidth, height: quarterHeight))
+        
+        titleLabel.frame = CGRect(origin: CGPoint.init(x: 10, y: 0), size: CGSize(width: viewWidth - 20, height: quarterHeight))
         imageView.frame = CGRect(origin: CGPoint(x:0.0, y:quarterHeight), size: CGSize(width: viewWidth, height: halfHeight))
         subtitleLabel.frame = CGRect(origin: CGPoint(x:0.0, y:threeQuarterHeight), size: CGSize(width: viewWidth, height: quarterHeight))
     }
